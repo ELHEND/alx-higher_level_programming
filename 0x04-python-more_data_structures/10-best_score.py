@@ -8,7 +8,7 @@ def best_score(a_dictionary):
         score = 0
         leader = ""
         for m in my_list:
-            if a_dictionary[i] > score:
+            if a_dictionary[m] > score:
                 score = a_dictionary[m]
                 leader = m
         return leader
