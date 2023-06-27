@@ -16,7 +16,6 @@ class Square:
 
     @property
     def size(self):
-
         """Get/set the current size of the square."""
         return (self.__size)
 
@@ -38,6 +37,5 @@ class Square:
             [print("#", end="") for j in range(self.__size)]
             print("")
         if self.__size == 0:
-
             print("")
 
