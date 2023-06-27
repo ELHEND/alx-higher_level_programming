@@ -68,9 +68,7 @@ class SinglyLinkedList:
             tmp.next_node = new
 
     def __str__(self):
-        """Define the print()  What is the data structure
-        called Singly Linked List and how is it represented?
-        """
+        """Define the print() representation of a SinglyLinkedList. """
         values = []
         tmp = self.__head
         while tmp is not None:
