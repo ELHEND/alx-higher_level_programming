@@ -51,13 +51,10 @@ class SinglyLinkedList:
 
         The node is inserted into the list at the correct
         ordered numerical position.
-
-        Args:
-            value (Node): The new Node to insert.
         """
         new = Node(value)
         if self.__head is None:
-            new.next_node = None
+            new.next_node =74 None
             self.__head = new
         elif self.__head.data > value:
             new.next_node = self.__head
@@ -71,7 +68,9 @@ class SinglyLinkedList:
             tmp.next_node = new
 
     def __str__(self):
-        """Define the print()  What is the data structure called Singly Linked List and how is it represented?"""
+        """Define the print()  What is the data structure
+        called Singly Linked List and how is it represented?
+        """
         values = []
         tmp = self.__head
         while tmp is not None:
