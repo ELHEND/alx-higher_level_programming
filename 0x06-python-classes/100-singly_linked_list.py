@@ -51,6 +51,9 @@ class SinglyLinkedList:
 
         The node is inserted into the list at the correct
         ordered numerical position.
+
+        Args:
+            value (Node): The new Node to insert.
         """
         new = Node(value)
         if self.__head is None:
@@ -68,7 +71,7 @@ class SinglyLinkedList:
             tmp.next_node = new
 
     def __str__(self):
-        """Define the print() representation of a SinglyLinkedList. """
+        """Define the print() representation of a SinglyLinkedList."""
         values = []
         tmp = self.__head
         while tmp is not None:
