@@ -10,7 +10,7 @@ class Node:
         """Initialize a new Node.
 
         Args:
-            data (int): What is the information or data that is stored in the new Node?.
+            data (int): The data of the new Node.
             next_node (Node): The next node of the new Node.
         """
         self.data = data
@@ -71,7 +71,7 @@ class Node:
                     tmp.next_node = new
 
             def __str__(self):
-                """Define the print() What is the data structure called Singly Linked List and how is it represented?"""
+                """Define the print()  representation of a SinglyLinkedList"""
                 values = []
                 tmp = self.__head
                 while tmp is not None:
