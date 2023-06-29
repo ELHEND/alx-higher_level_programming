@@ -6,7 +6,7 @@ max_integer = __import__('6-max_integer').max_integer
 
 
 class TestMaxInteger(unittest.TestCase):
-    """Define unittests for max_integer([..])."""
+    """Create unit tests to verify the functionality of the 'max_integer' function when provided with a list of values."""
 
     def test_ordered_list(self):
         """Test an ordered list of integers."""
@@ -19,7 +19,7 @@ class TestMaxInteger(unittest.TestCase):
         self.assertEqual(max_integer(unordered), 4)
     
     def test_max_at_begginning(self):
-        """Test a list with a beginning max value."""
+        """Verify the correct behavior of the 'max_integer' function when given a list that starts with a maximum value."""
         max_at_beginning = [4, 3, 2, 1]
         self.assertEqual(max_integer(max_at_beginning), 4)
 
@@ -39,7 +39,7 @@ class TestMaxInteger(unittest.TestCase):
         self.assertEqual(max_integer(floats), 15.2)
 
     def test_ints_and_floats(self):
-        """Test a list of ints and floats."""
+        """Compare a series of integers and decimals."""
         ints_and_floats = [1.53, 15.5, -9, 15, 6] 
         self.assertEqual(max_integer(ints_and_floats), 15.5)
 
@@ -49,12 +49,12 @@ class TestMaxInteger(unittest.TestCase):
         self.assertEqual(max_integer(string), 'r')
 
     def test_list_of_strings(self): 
-        """Test a list of strings."""
+        """the Test a list of strings."""
         strings = ["Brennan", "is", "my", "name"]
         self.assertEqual(max_integer(strings), "name")
 
     def test_empty_string(self): 
-        """Test an empty string."""
+        """the Test an empty string."""
         self.assertEqual(max_integer(""), None)
 
 if __name__ == '__main__':
