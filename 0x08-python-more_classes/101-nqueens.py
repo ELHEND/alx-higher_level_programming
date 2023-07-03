@@ -53,9 +53,9 @@ def xout(board, row, col):
     longer be played are X-ed out.
 
     Args:
-        board (list): The current working chessboard.
-        row (int): The row where a queen was last played.
-        col (int): The column where a queen was last played.
+        board (list): current working chessboard.
+        row (int): row where a queen was last played.
+        col (int): column where a queen was last played.
     """
     # X out all forward spots
     for c in range(col + 1, len(board)):
