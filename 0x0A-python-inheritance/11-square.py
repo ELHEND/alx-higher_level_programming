@@ -8,7 +8,7 @@
      def __init__(self, size):
          """Initialize a new square.
 
-         Args: 
+         Args:
              size (int): The size of the new square.
          """
          self.integer_validator("size", size)
