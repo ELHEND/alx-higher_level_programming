@@ -1,5 +1,3 @@
--- Lists all privileges of  MySQL users user_0d_1 and user_0d_2
-
-SHOW GRANTS FOR 'user_0d_1'@'localhost';
-SHOW GRANTS FOR 'user_0d_2'@'localhost';
-
+uninstall plugin validate_password;
+ALTER USER 'root'@'localhost' IDENTIFIED BY '';
+UNINSTALL COMPONENT "file://component_validate_password";
